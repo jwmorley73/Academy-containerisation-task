@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools~=67.7"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rebel_secret_communications"
+version = "0.1.0"
+authors = [
+    {name = "Joel Morley", email = "joel.morley@raytheon.co.uk"}
+]
+description = "Manages secret rebel communications"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["src"]
