@@ -41,4 +41,5 @@ async def get_message(uuid: str) -> str:
         raise fastapi.HTTPException(
             404, f"No message was found for the message uuid: {uuid}."
         )
+
     return message
