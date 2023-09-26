@@ -73,5 +73,6 @@ Now we have all the credential we can finally put the pieces together and find t
 
 - Utilize the credentials secured earlier to infiltrate the Rebel database. You can access the postgres terminal by running ```psql -U <username> -w <password> -d <name>``` from within the database container
 - Employ the dark arts of SQL to execute queries and unearth the Rebel Captain's identities.
+- Make the containers data persistent after the container is removed and recreated by storing its data in a docker volume. Alter the data and rebuild the container to prove to the emperor that the task is complete. Hint: the PostgreSQL container stores its data in its `/var/lib/postgresql/data` directory.
 
 May the Emperor's guidance be with you as we strive to crush the Rebel scum and maintain order in the galaxy. Your unwavering loyalty to the Empire will be rewarded.

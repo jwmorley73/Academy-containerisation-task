@@ -30,8 +30,8 @@ CREATE TABLE IF NOT EXISTS Agents (
     CONSTRAINT fk_homeworld FOREIGN KEY (HomeworldID) REFERENCES Planets (ID)
 );
 
--- Create the StarshipAgent table
-CREATE TABLE IF NOT EXISTS StarshipAgents (
+-- Create the Captain table
+CREATE TABLE IF NOT EXISTS Captains (
     ID SERIAL PRIMARY KEY,
     AgentID INT,
     StarshipID INT,
@@ -43,14 +43,14 @@ CREATE TABLE IF NOT EXISTS StarshipAgents (
 CREATE TABLE IF NOT EXISTS Missions (
     ID SERIAL PRIMARY KEY,
     DestinationID INT,
-    StarshipAgentID INT,
+    CaptainID INT,
     Objective TEXT NOT NULL,
     StartDate DATE,
     EndDate DATE,
     MissionStatus VARCHAR(255),
     ReportSummary TEXT,
     CONSTRAINT fk_destination FOREIGN KEY (DestinationID) REFERENCES Planets (ID),
-    CONSTRAINT fk_starship_agent FOREIGN KEY (StarshipAgentID) REFERENCES StarshipAgents (ID)
+    CONSTRAINT fk_starship_agent FOREIGN KEY (CaptainID) REFERENCES Captains (ID)
 );
 
 -- Insert data into the Planets table
@@ -101,8 +101,8 @@ VALUES
     (9, 'Specter 7', 'Duros', 'Captain', 5, 8, 'Moderate'),
     (10, 'Fulcrum', 'Clawdite', 'Commander', 8, 5, 'High');
 
--- Insert data into the StarshipAgents table
-INSERT INTO StarshipAgents (ID, AgentID, StarshipID)
+-- Insert data into the Captains table
+INSERT INTO Captains (ID, AgentID, StarshipID)
 VALUES
     (1, 1, 7),
     (2, 2, 9),
@@ -120,7 +120,7 @@ VALUES
     (14, 10, 4);
 
 -- Insert data into the Missions table
-INSERT INTO Missions (ID, DestinationID, StarshipAgentID, Objective, StartDate, EndDate, MissionStatus, ReportSummary)
+INSERT INTO Missions (ID, DestinationID, CaptainID, Objective, StartDate, EndDate, MissionStatus, ReportSummary)
 VALUES
     (1, 2, 8, 'Steal Death Star plans', '2022-03-15', '2022-03-17', 'Completed', 'Obtained plans from Scarif base'),
     (2, 3, 3, 'Establish Echo Base', '2022-11-01', '2023-01-05', 'Ongoing', 'Hoth base operational, facing Empire attacks'),

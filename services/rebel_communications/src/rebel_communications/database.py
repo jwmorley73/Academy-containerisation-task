@@ -41,7 +41,9 @@ messages: typing.Dict[str, str] = {
         
         Omega,
         
-        Decrypted Imperial codes reveal fleet movements. Share wisely. A potential game-changer.
+        Decrypted Imperial codes reveal fleet movements. Share wisely. A potential game-changer. 
+        
+        We have recorded the new fleet positions in the *rebel-missions* database as requested.
         """,
 
     "4db05a51-e612-4834-86ea-3e74a86c30f5": """

@@ -187,9 +187,23 @@ These are just some of the ways of getting the answer. Containers are incredibly
   docker run -it --user root rebel-database psql -U leia -w r2d2-123! -d rebel-missions
   ```
 </details>
-
 <details>
   <summary>b. Answer</summary>
 
   Answers are in the sql file [`./services/rebel_database/database.sql`](./services/rebel_database/database.sql)
+</details>
+<details>
+  <summary>c. Answer</summary>
+
+  First we need a volume:
+
+  ```
+  docker volume create database-data
+  ```
+
+  Then we can run the database with the volume attached:
+  
+  ```
+  docker run -v database-data:/var/lib/postgresql/data -d --name rebel-database rebel-database:latest
+  ```
 </details>

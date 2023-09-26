@@ -4,54 +4,56 @@ import typing
 
 
 messages: typing.Dict[str, str] = {
-    "82c3ded9-2a2f-483a-980a-820485d23862": """
-        Subject: Urgent: Relocation Required
-        From: Alpha Leader
-        To: Bravo Rebel Cell
+    "767ea683-b081-4cd9-a1ee-0e41c3496bba": """ 
+        Subject: Covert Operation Intel
+        From: Phantom Operative
+        To: Shadow Rebel Cell
         
-        Bravo,
+        Shadow Team,
         
-        Imperial forces closing in. New rendezvous coordinates attached. Stay alert. May the Force be with us.
+        Infiltration of Imperial base Alpha-7 successful. Obtained vital data on their weapon prototypes. Meet at extraction point Delta-9 at 0300 hours.
         """,
 
-    "46245131-7c14-4faa-9d0c-3f7a0701d193": """
-        Subject: Supply Depot Threat
-        From: Echo Scout
-        To: Foxtrot Rebel Cell
+    "d1df47df-3a3c-45bf-b8bd-e413cd055c2d": """
+        Subject: Code Red: Incoming Threat
+        From: Specter Recon
+        To: Ghost Rebel Cell
+
+        Ghost Squad,
+
+        Intercepted Imperial transmission indicates imminent orbital bombardment. Evacuate base Echo-12 immediately. Time is of the essence. 
         
-        Foxtrot,
-        
-        Intercepted comms hint at Imperial raid on our depot. Need reinforcements now. Depot location sent. Hurry!
+        Leia will be responsible for transporting the database, she is the administrator after all!
         """,
 
-    "3287056b-9a5d-406f-b2ca-1fc94ade133d": """
-        Subject: Security Alert
-        From: Delta Commander
-        To: Gamma Rebel Cell
-        
-        Gamma,
-        
-        Intel warns of possible informant. Investigate quietly. Report any suspicions. Trust no one.
+    "efd19757-b69f-41ba-a111-9d52823fa241": """
+        Subject: Eyes in the Sky
+        From: Nova Surveillance
+        To: Eclipse Rebel Cell
+
+        Eclipse,
+
+        Deploying microdroids for long-range surveillance of Imperial fleet movements. Expect encrypted data feed. Maintain radio silence.
         """,
 
-    "3399d51f-12dd-4116-bf9a-f0c12af256b9": """
-        Subject: Imperial Fleet Intel
-        From: Zeta Tech Specialist
-        To: Omega Rebel Cell
-        
-        Omega,
-        
-        Decrypted Imperial codes reveal fleet movements. Share wisely. A potential game-changer.
+    "0a65db90-2a67-48f2-bd91-4475cb113e27": """
+        Subject: Double Agent Alert
+        From: Shadowblade Counterintel
+        To: Saber Rebel Cell
+
+        Saber Operatives,
+
+        Suspected double agent within our ranks. Initiate Operation Phoenix to expose the traitor. Our secrets must remain secure.
         """,
 
-    "4db05a51-e612-4834-86ea-3e74a86c30f5": """
-        Subject: High-Value Target
-        From: Charlie Infiltrator
-        To: Tango Rebel Cell
-        
-        Tango,
-        
-        Identifying a vital Imperial target. Preparing extraction op. Await further instructions. Time to strike back.
+    "e830b08f-b0ab-41e9-bb9b-eb19c9e912a2": """
+        Subject: Rebel Alliance Assembly
+        From: Starfire Strategist
+        To: Nebula Rebel Cell
+
+        Nebula Command,
+
+        Urgent: High-level Rebel Alliance assembly scheduled. Discussing a major offensive. Prepare for briefing at the undisclosed rendezvous point.
         """
 }
 "Database containing latest rebel communications"
