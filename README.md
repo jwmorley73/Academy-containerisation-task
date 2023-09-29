@@ -16,7 +16,7 @@ The rebel alliance organise their missions through a central databse. We have de
 
 **Execution:**
 
-- Download the database image from DockerHub. It is known under the tag `rebel-database:latest`
+- Download the database image from DockerHub. It is known under the tag `jwmorley73/rebel-database:latest`
 - Launch the database with default settings
 - Verify the database's status, ensuring it is running as intended
 

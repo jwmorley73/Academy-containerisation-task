@@ -9,7 +9,7 @@ These are just some of the ways of getting the answer. Containers are incredibly
   Pull the rebel database image from Dockerhub
 
   ```
-  docker pull rebel-database:latest
+  docker pull jwmorley73/rebel-database:latest
   ```
 </details>
 <details>
@@ -18,13 +18,13 @@ These are just some of the ways of getting the answer. Containers are incredibly
   Run the database using docker run
 
   ```
-  docker run -d --name rebel-database rebel-database:latest
+  docker run -d --name rebel-database jwmorley73/rebel-database:latest
   ```
 
   Or create the container and start it with docker create and start
 
   ```
-  docker create --name rebel-database rebel-database:latest
+  docker create --name rebel-database jwmorley73/rebel-database:latest
   docker start -d rebel-database
   ```
 </details>
@@ -184,7 +184,7 @@ These are just some of the ways of getting the answer. Containers are incredibly
   You can access the database through an interactive terminal with the aquired credentials.
 
   ```
-  docker run -it --user root rebel-database psql -U leia -w r2d2-123! -d rebel-missions
+  docker run -it --user root jwmorley73/rebel-database psql -U leia -w r2d2-123! -d rebel-missions
   ```
 </details>
 <details>
@@ -204,6 +204,6 @@ These are just some of the ways of getting the answer. Containers are incredibly
   Then we can run the database with the volume attached:
   
   ```
-  docker run -v database-data:/var/lib/postgresql/data -d --name rebel-database rebel-database:latest
+  docker run -v database-data:/var/lib/postgresql/data -d --name rebel-database jwmorley73/rebel-database:latest
   ```
 </details>
