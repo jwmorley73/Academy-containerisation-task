@@ -5,7 +5,7 @@ WORKDIR /src
 
 COPY AdminComputer.jar /src/AdminComputer.jar
 
-COPY /src/notes.txt /src/hidden/findme/notes.txt
+COPY notes.txt /src/hidden/findme/notes.txt
 
 # Expose the port your application listens on (if applicable)
 EXPOSE 8080
