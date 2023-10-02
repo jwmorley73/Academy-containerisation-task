@@ -11,4 +11,4 @@ COPY /src/notes.txt /src/hidden/findme/notes.txt
 EXPOSE 8080
 
 # Define the command to run your Java application
-CMD ["java", "-jar", "your-app.jar"]
+CMD ["java", "-jar", "AdminComputer.jar"]
