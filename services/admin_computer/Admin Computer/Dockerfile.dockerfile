@@ -3,7 +3,8 @@ FROM openjdk:11-jre-slim
 # Set the working directory inside the container
 WORKDIR /src
 
-COPY AdminComputer.jar /src/AdminComputer.jar
+COPY AdminComputer.class /src/AdminComputer.class
+COPY AdminComputer.java /src/AdminComputer.java
 
 COPY notes.txt /src/hidden/findme/notes.txt
 
@@ -11,4 +12,4 @@ COPY notes.txt /src/hidden/findme/notes.txt
 EXPOSE 8080
 
 # Define the command to run your Java application
-CMD ["java", "-jar", "AdminComputer.jar"]
+CMD ["java", "AdminComputer"]
